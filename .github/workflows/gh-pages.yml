@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - 167-make-the-search-index-load-faster
 
 jobs:
   deploy:
