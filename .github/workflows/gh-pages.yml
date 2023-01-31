@@ -38,7 +38,7 @@ jobs:
           fi
 
       - name: Build website
-        run: python3 update-attack.py --attack-brand --extras --no-test-exitstatus
+        run: python3 update-attack.py --attack-brand --extras resources contribute blog stixtests --no-test-exitstatus --subdirectory attack-website
         env:
           GOOGLE_ANALYTICS: ${{ secrets.GOOGLE_ANALYTICS }}
           GOOGLE_SITE_VERIFICATION: ${{ secrets.GOOGLE_SITE_VERIFICATION }}
